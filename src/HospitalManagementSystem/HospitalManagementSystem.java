@@ -9,7 +9,7 @@ import java.sql.SQLException;
 public class HospitalManagementSystem {
     private static final String url = "jdbc:mysql://localhost:3306/hospital";
     private static final String username = "root";
-    private static final String password = "9424224082Hp@"; // mask it before commiting
+    private static final String password = ""; // mask it before commiting
 
     public static boolean checkavailability(Connection connection, int doctor_id, String appointment_date){
         String query = "Select count(*) from appointments where doctor_id = ? and appointment_date = ?";

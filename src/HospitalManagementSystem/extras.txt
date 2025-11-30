@@ -1,0 +1,33 @@
+# code for checking database connection
+public static void main(String[] args) {
+        String url = "jdbc:mysql://localhost:3306/hospital"; // Replace with your DB URL
+        String user = "root"; // Replace with your username
+        String password = "9424224082Hp@"; // Replace with your password
+
+        Connection connection = null;
+        Statement statement = null;
+        ResultSet resultSet = null;
+
+        try {
+            connection = DriverManager.getConnection(url, user, password);
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery("SELECT * from doctors"); // A simple query to test connection
+
+            if (resultSet.next()) {
+                System.out.println("JDBC connection is active and query executed successfully.");
+            } else {
+                System.out.println("JDBC connection is not active or query failed.");
+            }
+
+        } catch (SQLException e) {
+            System.err.println("Error during connection or query: " + e.getMessage());
+        } finally {
+            try {
+                if (resultSet != null) resultSet.close();
+                if (statement != null) statement.close();
+                if (connection != null) connection.close();
+            } catch (SQLException e) {
+                System.err.println("Error closing resources: " + e.getMessage());
+            }
+        }
+    }

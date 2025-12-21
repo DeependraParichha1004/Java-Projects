@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.Question;
+import com.example.demo.model.Question;
 import com.example.demo.dao.QuestionDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

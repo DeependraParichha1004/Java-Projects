@@ -1,14 +1,13 @@
-package com.example.demo;
+package com.example.demo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
-import org.w3c.dom.Text;
 
-@Data
-@Entity
+@Data // dont need to create getters, setters, ...
+@Entity // make a class as a database table.
 public class Question {
 
     @Id

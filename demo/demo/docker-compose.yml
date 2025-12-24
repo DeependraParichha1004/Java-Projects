@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres-db
+    environment:
+      POSTGRES_DB: ml_project
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 9424224082
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  app:
+    image: demo-app
+    container_name: demo-container
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/ml_project
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: 9424224082
+
+volumes:
+  pgdata:

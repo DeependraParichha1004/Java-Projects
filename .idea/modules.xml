@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Hospital Management System.iml" filepath="$PROJECT_DIR$/Hospital Management System.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/ServletSetup.iml" filepath="$PROJECT_DIR$/ServletSetup.iml" />
+>>>>>>> c455c10 (Initail commit : Servlet Setup done)
     </modules>
   </component>
 </project>

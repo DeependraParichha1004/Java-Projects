@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="C:\Users\ASUS\OneDrive\Desktop\projects\Java\MyServletApp\webapp">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="C:/Users/ASUS/OneDrive/Desktop/projects/Java/MyServletApp/out/production/MyServletApp" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/el-api.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/el-api.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/jasper.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jasper.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/jsp-api.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jsp-api.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/catalina.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/catalina.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/ecj-4.20.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/ecj-4.20.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/jasper-el.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jasper-el.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/jaspic-api.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jaspic-api.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-api.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-api.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-jni.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-jni.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/catalina-ha.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/catalina-ha.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/servlet-api.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/servlet-api.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-dbcp.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-dbcp.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-jdbc.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-jdbc.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-util.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-util.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/catalina-ant.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/catalina-ant.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/catalina-ssi.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/catalina-ssi.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-coyote.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-coyote.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/websocket-api.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/websocket-api.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-i18n-cs.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-i18n-cs.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-i18n-de.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-i18n-de.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-i18n-es.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-i18n-es.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-i18n-fr.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-i18n-fr.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-i18n-ja.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-i18n-ja.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-i18n-ko.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-i18n-ko.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-i18n-ru.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-i18n-ru.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/annotations-api.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/annotations-api.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/catalina-tribes.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/catalina-tribes.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-util-scan.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-util-scan.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-websocket.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-websocket.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-coyote-ffm.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-coyote-ffm.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-i18n-pt-BR.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-i18n-pt-BR.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/tomcat-i18n-zh-CN.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/tomcat-i18n-zh-CN.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/apache-tomcat-9.0.112/apache-tomcat-9.0.112/lib/catalina-storeconfig.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/catalina-storeconfig.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0/mysql-connector-j-9.5.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/mysql-connector-j-9.5.0.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/jackson-annotations-2.17.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jackson-annotations-2.17.1.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/jackson-core-2.17.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jackson-core-2.17.1.jar"/>
+    <PostResources base="C:/Users/ASUS/Downloads/jackson-databind-2.17.1.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/jackson-databind-2.17.1.jar"/>
+  </Resources>
+</Context>

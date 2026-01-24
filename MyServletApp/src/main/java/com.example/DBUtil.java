@@ -8,7 +8,7 @@ public class DBUtil {
     private static final String URL =
             "jdbc:mysql://localhost:3306/employee";
     private static final String USER = "root";
-    private static final String PASSWORD = "9424224082Hp@";
+    private static final String PASSWORD = "";
 
     public static Connection getConnection() throws Exception {
         Class.forName("com.mysql.cj.jdbc.Driver");

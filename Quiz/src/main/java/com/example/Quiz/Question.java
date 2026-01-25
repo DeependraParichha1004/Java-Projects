@@ -12,13 +12,13 @@ public class Question {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //differencr between identity and sequence?
-    private Integer id;
+    private Long id;
     private String option1;
     private String option2;
     private String option3;
     private String option4;
-    private String rightAnswer;
+    private String right_answer;
     private String question_title;
-    private String difficultylevel;
+    private String difficult_level;
     private String category;
 }

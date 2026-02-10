@@ -4,12 +4,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Data;
 
-
+import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 @Data
-public class Payment {
+public class Payment implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long payment_id;
@@ -26,11 +26,11 @@ public class Payment {
     private String errorCode;
     private String errorMssg;
 
-    public void setCode(String code){
+    public void setCode(String code) {
         this.errorCode = code;
     }
 
-    public void setCodeMssg(String mssg){
+    public void setCodeMssg(String mssg) {
         this.errorMssg = mssg;
     }
 

@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.cache.annotation.Cacheable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,26 +18,26 @@ public class QuestionService {
     @Autowired
     QuestionDao questiondao;
 
+    @Cacheable(value = "questions", key = "'all_questions'")
     public List<Question> getQuestions() {
         return questiondao.findAll();
     }
 
-    public ResponseEntity<List<Question>> getQuestionsByCategory(String category) {
-        try{
-            return new ResponseEntity<>(questiondao.findByCategory(category), HttpStatus.OK);
-        }
-        catch(Exception e){
+    @Cacheable(value = "questions", key = "#category")
+    public List<Question> getQuestionsByCategory(String category) {
+        try {
+            return questiondao.findByCategory(category);
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        return new ResponseEntity<>(new ArrayList<>(), HttpStatus.BAD_GATEWAY);
+        return new ArrayList<>();
     }
 
-    public ResponseEntity<String> addQuestions(Question question){
-        try{
+    public ResponseEntity<String> addQuestions(Question question) {
+        try {
             questiondao.save(question);
             return new ResponseEntity<>("Question Added Successfully!", HttpStatus.CREATED);
-        }
-        catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return new ResponseEntity<>("Question Cannot be saved!", HttpStatus.BAD_REQUEST);

@@ -1,5 +1,7 @@
 package com.example.Quiz;
 
+import java.io.Serializable;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -8,10 +10,10 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Question {
+public class Question implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //differencr between identity and sequence?
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // differencr between identity and sequence?
     private Long id;
     private String option1;
     private String option2;

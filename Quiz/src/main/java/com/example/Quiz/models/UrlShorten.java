@@ -17,12 +17,14 @@ public class UrlShorten {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String long_url;
-    private String short_url;
+    private String longUrl;
+    private String shortUrl;
 
-    public UrlShorten(String long_url, String tiny_url) {
-        this.short_url = tiny_url;
-        this.long_url = long_url;
+    public void setLongUrl(String long_url) {
+        this.longUrl = long_url;
     }
 
+    public void setTinyUrl(String tiny_url) {
+        this.shortUrl = tiny_url;
+    }
 }

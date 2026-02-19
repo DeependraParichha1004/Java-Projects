@@ -9,6 +9,10 @@ import com.example.Quiz.models.SessionDetail;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+// import org.hibernate.mapping.Map;
+
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 
@@ -28,13 +32,13 @@ public class SessionsController {
     }
 
     @PostMapping("/login")
-    public String login(@RequestBody SessionDetail sessionDetail) {
+    public Map<String, String> login(@RequestBody SessionDetail sessionDetail) {
         String username = sessionDetail.getUsername();
         String password = sessionDetail.getPassword();
         if (userService.authenticated(username, password)) {
             // return userService.loadByUsername(username, password);
             String token = jwtTokenService.generateJwtToken(username, password);
-            return token;
+            return Map.of("access_token", token);
         } else {
             return null;
         }

@@ -1,7 +1,7 @@
 package com.example.Quiz.Controller;
 
 import com.example.Quiz.models.Payment;
-
+import com.razorpay.RazorpayException;
 import com.example.Quiz.Service.JwtTokenService;
 import com.example.Quiz.Service.PaymentService;
 import com.example.Quiz.Service.UserService;
@@ -36,5 +36,15 @@ public class PaymentController {
     @GetMapping("/v1/{id}")
     public Payment get_payment(@PathVariable int id) {
         return paymentService.getPayment(id);
+    }
+
+    @PostMapping("/v1/initiate_payment")
+    public String initiate_payment(@RequestParam Integer amount, @RequestParam String currency) {
+        try {
+            return paymentService.createOrder(amount, currency, "receipt_no");
+        } catch (RazorpayException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 }
